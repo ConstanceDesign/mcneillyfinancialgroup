@@ -1,0 +1,35 @@
+.business-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .business-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .business-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .business-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .business-insurance-list {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .insurance-item {
+    margin-bottom: 10px;
+  }

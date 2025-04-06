@@ -1,0 +1,1 @@
+export { default } from './Navbar'; // Automatically export Navbar component

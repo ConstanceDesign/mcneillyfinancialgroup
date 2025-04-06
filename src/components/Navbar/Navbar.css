@@ -1,0 +1,130 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+
+.navbar-brand a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for mobile menu */
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navbar-links a:hover {
+  color: #f39c12;
+}
+
+.navbar-links li a:hover {
+  color: #ff7f00; /* Change to a color of your choice */
+}
+
+/* Style for Sterling Mutuals Login button */
+.btn-sterling-login {
+  padding: 8px 10px;
+  margin-left: 20px;
+  background-color: #007bff;  /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-sterling-login:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-sterling-login:focus {
+  outline: none;
+}
+
+.btn-sterling-login:active {
+  background-color: #004085; /* Even darker blue on active */
+}
+
+/* Mobile Menu Icon */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  background-color: #fff;
+}
+
+/* Media Query for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;  /* Hide links initially */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    text-align: center;
+    z-index: 1;
+    transform: translateY(-100%);  /* Hide links off-screen */
+  }
+
+  .navbar-links.active {
+    display: block;  /* Show links when active */
+    transform: translateY(0); /* Smoothly slide the menu in */
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-links li {
+    margin: 0;
+  }
+
+  .navbar-toggle {
+    display: flex;  /* Show hamburger menu on mobile */
+  }
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 769px) {
+  .navbar-links {
+    display: flex;  /* Always display links on larger screens */
+  }
+
+  .navbar-toggle {
+    display: none;  /* Hide hamburger icon on large screens */
+  }
+}
